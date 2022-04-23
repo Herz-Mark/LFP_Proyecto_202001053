@@ -1,0 +1,23 @@
+TOKEN                                                   PATRÓN                                              ER
+palabra                                                 secuencia de letra de [A-Z]                         letra+
+entero                                                  secuencia de 1 o mas digitos enteros                digito+
+igual                                                   símbolo =                                           =
+corchete_inicio                                         símbolo [                                           [
+corchete_final                                          símbolo ]                                           ]
+comilla                                                 símbolo "                                           "
+coma                                                    símbolo ,                                           ,
+llave_inicio                                            símbolo {                                           {
+llave_final                                             símbolo }                                           }
+parentesis_inicio                                       símbolo (                                           (
+parentesis_final                                        símbolo )                                           )
+numeral                                                 símbolo #                                           #
+comilla simple                                          símbolo '                                           '
+punto y coma                                            símbolo ;                                           ;
+diagonal                                                símbolo /                                           /
+diagonal_invertida                                      símbolo \                                           \
+asterisco                                               símbolo *                                           *
+
+EXPRESION REGULAR:
+
+(palabra|entero|igual|corchete_inicio|corchete_final|comilla|coma|llave_inicio|llave_final|numeral|comilla simple|punto y coma|diagonal|diagonal_invertida|asterisco)+
+((letra)+|(digito)+|(igual|corchete_inicio|corchete_final|comilla|coma|llave_inicio|llave_final|numeral|comilla simple|punto y coma|diagonal|diagonal_invertida|asterisco)+)$
